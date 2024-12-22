@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.csproj": {}
+    "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.Client\\BlazorProject.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.csproj": {
+    "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.Client\\BlazorProject.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.csproj",
-        "projectName": "BlazorProject",
-        "projectPath": "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.csproj",
+        "projectUniqueName": "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.Client\\BlazorProject.Client.csproj",
+        "projectName": "BlazorProject.Client",
+        "projectPath": "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.Client\\BlazorProject.Client.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\obj\\",
+        "outputPath": "C:\\Users\\david\\Documents\\Blazor.net\\BlazorProject\\BlazorProject.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,6 +46,24 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "autoReferenced": true
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,15 +75,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[9.0.0, 9.0.0]"
+            }
+          ],
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
         }
       }
     }
